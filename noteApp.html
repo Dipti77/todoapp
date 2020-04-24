@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Notes</title>
+        <style>
+        .bd-footer {
+    background-color: #f7f7f7;
+}
+    </style>
+        <link rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+            integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+            crossorigin="anonymous">
+    </head>
+
+    <body>
+        <ul class="nav nav-tabs justify-content-center">
+            <li class="nav-item"><a href="index.html" class="nav-link"
+                    style="width:250px;">Calculator</a></li>
+            <li class="nav-item"><a href="noteApp.html"
+                    class="nav-link ml-2 active" style="width:250px;">Add Notes</a></li>
+            <li class="nav-item"><a href="setAlarm.html"
+                    class="nav-link ml-2" style="width:250px;">Set Alarm</a></li>
+        </ul>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand">Notes</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search"
+                        id='inputVal' placeholder="Search"
+                        aria-label="Search">
+
+                </form>
+            </div>
+        </nav>
+        <div class="cointainer my-3">
+            <h1>Welcome to Notes</h1>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Add a Title</h5>
+                    <div class="form-group">
+                        <textarea class="form-control" id="addTitle" rows="1"></textarea>
+                    </div>
+                    <h5 class="card-title">Add a note</h5>
+                    <div class="form-group">
+                        <textarea class="form-control" id="addTxt" rows="3"></textarea>
+                    </div>
+                    <button class="btn btn-primary" id='addBtn'>Add Note</button>
+                </div>
+            </div>
+        </div>
+        <h1>Your Notes</h1>
+        <hr>
+        <div id='notes' class='row cointainer-fluid'>
+
+        </div>
+        <footer class="bd-footer text-muted mt-5">
+            <div class="container-fluid p-3 p-md-5">
+                <p>Designed and built with all the love in the world by the
+                    <strong>team Techno</strong> with the help of <strong>Shree</strong>.</p>
+            </div>
+        </footer>
+
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+            integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+            crossorigin="anonymous"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+            crossorigin="anonymous"></script>
+        <script
+            src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+            crossorigin="anonymous"></script>
+        <script src="noteApp.js"></script>
+    </body>
+
+</html>
